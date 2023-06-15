@@ -1,5 +1,8 @@
 #!/bin/bash
-alias gitt="./gitt"
+#run the following command before using the script for more simplicity alias gitt="./gitt"
+
 git add .
 git commit -m "$1"
 git push
+
+#run the script as follows: gitt 'commit message' 
