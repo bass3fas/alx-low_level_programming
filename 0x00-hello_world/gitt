@@ -1,4 +1,5 @@
 #!/bin/bash
+alias gitt=./gitt
 git add .
 git commit -m "$1"
 git push
