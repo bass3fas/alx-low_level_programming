@@ -2,8 +2,6 @@
 
 /**
  * main - writes _putchar to stdout
- * _putchar - writes char to stdout
- * @c : character to be written
  * Return: 0 always
  */
 
