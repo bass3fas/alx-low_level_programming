@@ -14,7 +14,7 @@ typedef struct
 void print_dul(DUL num)
 {
 	if (num.high != 0)
-		printf("%lu%016%lu", num.high, num.low);
+		printf("%lu%016lu", num.high, num.low);
 	else
 		printf("%lu", num.low);
 }
@@ -35,8 +35,8 @@ int main(void)
 	unsigned int count;
 	DUL first, second, next;
 
-	first = { 0, 1 };
-	second = { 0, 2 };
+	first = { .high = 0, .low = 1 };
+	second = { .high = 0, .low = 2 };
 
 
 	print_dul(first);
