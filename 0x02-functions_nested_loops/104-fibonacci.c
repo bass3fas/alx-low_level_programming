@@ -35,8 +35,10 @@ int main(void)
 	unsigned int count;
 	DUL first, second, next;
 
-	first = { .high = 0, .low = 1 };
-	second = { .high = 0, .low = 2 };
+	first.low = 1;
+	first.high = 0;
+	second.low = 2;
+	second.high = 0;
 
 
 	print_dul(first);
