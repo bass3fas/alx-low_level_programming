@@ -14,9 +14,7 @@ int main(void)
 	next = 0;
 	sum = 0;
 
-	printf("%lu, %lu", first, second);
-
-	for (i = 3; next <= 4000000; i++)
+	for (i = 1; next <= 4000000; i++)
 	{
 		next = first + second;
 		if (next % 2 == 0)
