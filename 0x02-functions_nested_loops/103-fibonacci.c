@@ -16,10 +16,9 @@ int main(void)
 
 	for (i = 0; next <= 4000000; i++)
 	{
-		next = first + second;
 		if (next % 2 == 0)
 			sum = sum + next;
-
+		next = first + second;
 		first = second;
 		second = next;
 	}
