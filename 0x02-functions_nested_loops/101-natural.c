@@ -1,12 +1,11 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * natural - prints divisible by 3 and 5
+ * main - prints divisible by 3 and 5
+ * Return: success
  */
 
 
-
-void natural(void)
+int main(void)
 {
 	int i, j;
 
@@ -19,5 +18,7 @@ void natural(void)
 	}
 
 	printf("%d\n", j);
+
+	return (0);
 
 }
