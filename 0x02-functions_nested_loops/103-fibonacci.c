@@ -7,11 +7,12 @@
 
 int main(void)
 {
-	unsigned long i, next, first, second;
+	unsigned long i, sum, next, first, second;
 
 	first = 1;
 	second = 2;
 	next = 0;
+	sum = 0;
 
 	printf("%lu, %lu", first, second);
 
@@ -19,12 +20,12 @@ int main(void)
 	{
 		next = first + second;
 		if (next % 2 == 0)
-			printf(", %lu", next);
+			sum = sum + next;
 
 		first = second;
 		second = next;
 	}
-	printf("\n");
+	printf("%lu\n", sum);
 
 	return (0);
 }
