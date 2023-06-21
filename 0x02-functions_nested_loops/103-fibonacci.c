@@ -14,7 +14,7 @@ int main(void)
 	next = 0;
 	sum = 0;
 
-	for (i = 0; next <= 4000000; i++)
+	for (i = 0; next <= 4000001; i++)
 	{
 		if (next % 2 == 0)
 			sum = sum + next;
