@@ -8,18 +8,18 @@
 int main(void)
 {
 	int n;
-        unsigned long long i, next, first, second;
+        unsigned long i, next, first, second;
 
 	n = 50;
 	first = 1;
 	second = 2;
 
-	printf("%llu, %llu", first, second);
+	printf("%lu, %lu", first, second);
 
 	for (i = 3; i <= n; i++)
 	{
 		next = first + second;
-		printf(", %llu", next);
+		printf(", %lu", next);
 
 		first = second;
 		second = next;
