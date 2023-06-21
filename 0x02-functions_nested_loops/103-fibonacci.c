@@ -12,7 +12,7 @@ int main(void)
 	first = 1;
 	second = 2;
 	next = 0;
-	sum = first + second;
+	sum = first;
 
 	for (i = 0; next <= 4000000; i++)
 	{
