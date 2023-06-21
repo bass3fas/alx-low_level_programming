@@ -7,18 +7,19 @@
 
 int main(void)
 {
-	int n, i, next, first, second;
+	int n;
+        unsigned long long i, next, first, second;
 
 	n = 50;
 	first = 1;
 	second = 2;
 
-	printf("%d, %d", first, second);
+	printf("%llu, %llu", first, second);
 
 	for (i = 3; i <= n; i++)
 	{
 		next = first + second;
-		printf(", %d", next);
+		printf(", %llu", next);
 
 		first = second;
 		second = next;
