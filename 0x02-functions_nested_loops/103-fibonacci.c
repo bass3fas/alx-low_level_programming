@@ -12,9 +12,9 @@ int main(void)
 	first = 1;
 	second = 2;
 	next = 0;
-	sum = 0;
+	sum = first + second;
 
-	for (i = 0; next <= 4000001; i++)
+	for (i = 0; next <= 4000000; i++)
 	{
 		if (next % 2 == 0)
 			sum = sum + next;
