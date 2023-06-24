@@ -32,7 +32,7 @@ int main(void)
 			secondl = nextls;
 			first = second;
 			second = next;
-			printf("%lu, ", nextl, next);
+			printf("%lu%lu, ", nextl, next);
 		}
 
 		else
@@ -44,7 +44,7 @@ int main(void)
 			printf("%lu", next);
 		}
 
-		if (count < 98)
+		if (count != 98)
 			printf(", ");
 	}
 	printf("\n");
