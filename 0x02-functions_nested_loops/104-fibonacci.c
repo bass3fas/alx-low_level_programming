@@ -19,7 +19,7 @@ int main(void)
 
 	printf("%lu, %lu, ", bk1, bk2);
 
-	for (count = 3; count < 98; count++)
+	for (count = 3; count <= 98; count++)
 	{
 		if (count > 91 || fr1 > 0 || fr2 > 0)
 		{
@@ -39,7 +39,7 @@ int main(void)
 			bk2 = hold1;
 			printf("%lu", bk2);
 		}
-		if (count != 97)
+		if (count != 98)
 			printf(", ");
 	}
 	printf("\n");
