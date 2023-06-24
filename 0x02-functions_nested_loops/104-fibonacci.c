@@ -1,53 +1,47 @@
 #include <stdio.h>
 /**
- * main - print fibonacci
- * Return: success
+ * main - does something
+ * Return: succ
  */
+
 
 
 int main(void)
 {
-	int count;
-	unsigned long int first, second, next;
-	/*unsigned long int nextl, nextls, largest, first1, second1;
+	unsigned long int count, largest;
+	unsigned long int fr1, fr2, bk1, bk2, hold1, hold2, hold3;
 
+	fr1 = 0;
+	bk1 = 1;
+	fr2 = 0;
+	bk2 = 2;
+	largest = 10000000000;
 
-	firstl = 0;
-	secondl = 0;
-	largest = ;*/
-	first = 1;
-	second = 2;
+	printf("%lu, %lu, ", bk1, bk2);
 
-	printf("%lu, %lu, ", first, second);
-
-
-	for (count = 3; count <= 98; count++)
+	for (count = 3; count < 98; count++)
 	{
-		/*if (first + second > largest || firstl > 0 || secondl > 0)
+		if (bk1 + bk2 > largest || fr1 > 0 || fr2 > 0)
 		{
-			nextl = (firstl + secondl) / largest;
-			next = (first + second) % largest;
-			nextls = firstl + secondl + nextl;
-			firstl = secondl;
-			secondl = nextls;
-			first = second;
-			second = next;
-			printf("%lu%lu, ", nextl, next);
+			hold1 = (bk1 + bk2) / largest;
+			hold2 = (bk1 + bk2) % largest;
+			hold3 = fr1 + fr2 + hold1;
+			fr1 = fr2;
+			bk1 = bk2;
+			fr2 = hold3;
+			bk2 = hold2;
+			printf("%lu%lu", fr2, bk2);
 		}
-
 		else
-		{*/
-
-			next = first + second;
-			first = second;
-			second = next;
-			printf("%lu", next);
-			/*	}*/
-
-		if (count != 98)
+		{
+			hold1 = bk1 + bk2;
+			bk1 = bk2;
+			bk2 = hold1;
+			printf("%lu", bk2);
+		}
+		if (count != 97)
 			printf(", ");
 	}
 	printf("\n");
-
 	return (0);
 }
