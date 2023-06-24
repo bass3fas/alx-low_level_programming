@@ -8,15 +8,15 @@
 int main(void)
 {
 	int count;
-	unsigned long int first, second, firstl, secondl;
-	unsigned long int next, nextl, nextls, largest;
+	unsigned long int first, second, next;
+	/*unsigned long int nextl, nextls, largest, first1, second1;
 
 
 	firstl = 0;
 	secondl = 0;
+	largest = ;*/
 	first = 1;
 	second = 2;
-	largest = 10000000000;
 
 	printf("%lu, %lu, ", first, second);
 
@@ -42,7 +42,7 @@ int main(void)
 			first = second;
 			second = next;
 			printf("%lu", next);
-			//}
+			/*	}*/
 
 		if (count != 98)
 			printf(", ");
