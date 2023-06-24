@@ -21,7 +21,7 @@ int main(void)
 
 	for (count = 3; count < 98; count++)
 	{
-		if (count > 92)
+		if (count > 91 || fr1 > 0 || fr2 > 0)
 		{
 			hold1 = (bk1 + bk2) / largest;
 			hold2 = (bk1 + bk2) % largest;
