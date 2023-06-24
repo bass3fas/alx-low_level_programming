@@ -23,7 +23,7 @@ int main(void)
 
 	for (count = 3; count <= 98; count++)
 	{
-		if (first + second > largest || firstl > 0 || secondl > 0)
+		/*if (first + second > largest || firstl > 0 || secondl > 0)
 		{
 			nextl = (firstl + secondl) / largest;
 			next = (first + second) % largest;
@@ -36,13 +36,13 @@ int main(void)
 		}
 
 		else
-		{
+		{*/
 
 			next = first + second;
 			first = second;
 			second = next;
 			printf("%lu", next);
-		}
+			//}
 
 		if (count != 98)
 			printf(", ");
