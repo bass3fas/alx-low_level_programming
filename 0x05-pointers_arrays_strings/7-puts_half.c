@@ -2,7 +2,7 @@
 
 
 /**
- * puts-half - puts
+ * puts_half - puts
  * @str: n
  */
 
