@@ -16,7 +16,7 @@ void rev_string(char *str)
 		;
 	l = i;
 
-	for (i--,c = 0; c < l / 2; i--, c++)
+	for (i--, c = 0; c < l / 2; i--, c++)
 	{
 		h = str[c];
 		str[c] = str[i];
