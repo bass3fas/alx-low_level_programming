@@ -3,7 +3,7 @@
 
 /**
  * print_rev - rev
- * @c: cha
+ * @str: cha
  */
 
 void print_rev(char *str)
