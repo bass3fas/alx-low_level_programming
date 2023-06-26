@@ -4,6 +4,7 @@
 /**
  * _strlen - len
  * @s: no 1
+ * Return: len
  */
 
 int _strlen(char *s)
