@@ -9,7 +9,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int r;
 
-	r = s1 - s2;
+	r = *s1 - *s2;
 	return (r);
 }
 
