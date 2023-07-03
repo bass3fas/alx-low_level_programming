@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * _strstr - does something
+ * @s: var
+ * @accept: var
+ * Return: char
+ */
+char *_strstr(char *s, char *accept)
+{
+	int i, j, n, l;
+
+	for (i = 0; accept[i] != '\0'; i++)
+		;
+	l = i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		n = 0;
+		for (j = 0; j < l; j++)
+		{
+			if (s[i + j] == accept[j])
+				n++;
+		}
+		if (n == l)
+			return (s + i);
+	}
+	return (NULL);
+}
