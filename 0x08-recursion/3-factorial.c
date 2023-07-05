@@ -4,7 +4,7 @@
  * @n: var
  * Return: n
  */
-int factorial(char n)
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
