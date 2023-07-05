@@ -22,7 +22,7 @@ int iterate(int n, int i)
 	if (i == 1)
 		return (1);
 	if (n % i == 0  && i > 1)
-                return (0);
+		return (0);
 	return (iterate(n, i - 1));
 }
 
