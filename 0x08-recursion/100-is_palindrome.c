@@ -24,7 +24,7 @@ int is_palindrome_rec(char *s, int start, int end)
 		return (1);
 	if (s[start] != s[end])
 		return (0);
-	return(is_palindrome_rec(s, start + 1, end - 1));
+	return (is_palindrome_rec(s, start + 1, end - 1));
 }
 /**
  * is_palindrome - something
