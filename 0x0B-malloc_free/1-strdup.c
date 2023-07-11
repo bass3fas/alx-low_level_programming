@@ -30,10 +30,12 @@ char *_strdup(char *str)
 	char *p;
 	unsigned int i, len;
 
+	if (str == NULL)
+		return (NULL);
 	len = _strlen(str);
 	p = malloc(sizeof(char) * (len + 1));
 
-	if (p == NULL || str == NULL)
+	if (p == NULL)
 		return (NULL);
 	for (i = 0; i < len; i++)
 	{
