@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+ * _strdup - creat array
+ * @str: var
+ * Return: char
+ */
+char *_strdup(char *str)
+{
+	char *p;
+	unsigned int i;
+
+	p = malloc(sizeof(str));
+
+	if (p == NULL || str == NULL)
+		return (NULL);
+	for (i = 0; i < sizeof(str); i++)
+	{
+		p[i] = str[i];
+	}
+	return (p);
+}
