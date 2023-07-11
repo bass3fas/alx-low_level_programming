@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
-	p = malloc(sizeof(char) * (len1 + len2 + 1));
+	p = malloc(sizeof(char) * (len1 + len2 + 2);
 
 	if (p == NULL)
 		return (NULL);
@@ -50,7 +50,7 @@ char *str_concat(char *s1, char *s2)
 		p[i] = s1[i];
 	if (s2 != NULL)
 	{
-		for (i = len1; i < len1 + len2 - 1; i++)
+		for (i = len1; i < len1 + len2; i++)
 			p[i] = s2[i - len1];
 		p[len1 + len2] = '\0';
 	}
