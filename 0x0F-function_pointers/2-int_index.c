@@ -5,6 +5,7 @@
  * @size: g
  * @cmp: t
  * @array: y
+ * Return: int
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
