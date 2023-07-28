@@ -4,7 +4,7 @@
 #include "lists.h"
 /**
  * add_node - print
- * @h: head
+ * @head: head
  * @str: string
  * Return:  nodes
  */
