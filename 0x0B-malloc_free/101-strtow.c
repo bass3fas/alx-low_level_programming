@@ -16,7 +16,7 @@ char **strtow(char *str)
 	words = countw(str);
 	if (words == 0)
 		return (NULL);
-	matrix = (char **) malloc(sizeof(char) * (c + 1));
+	matrix = (char **) malloc(sizeof(char *) * (c + 1));
 	if (matrix == NULL)
 		return (NULL);
 	for (i = 0; i <= len; i++)
@@ -52,7 +52,7 @@ int countw(char *s)
 {
 	int c, flag = 0, w = 0;
 
-	for (c =0; s[c] != '\0'; c++)
+	for (c = 0; s[c] != '\0'; c++)
 	{
 		if (s[c] == ' ')
 			flag = 0;
