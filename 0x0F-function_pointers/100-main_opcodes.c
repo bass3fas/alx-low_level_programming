@@ -6,7 +6,7 @@
  * @argv: pointer
  * Return: success
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
