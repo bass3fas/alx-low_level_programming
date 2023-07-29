@@ -6,7 +6,7 @@
 int main(int argc, char **argv)
 {
 	int arg1, arg2, result;
-	char o;
+	char o = *argv[2];
 	int (*func)(int, int);
 
 	if (argc != 4)
