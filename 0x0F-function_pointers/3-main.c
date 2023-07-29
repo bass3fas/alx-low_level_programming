@@ -1,6 +1,8 @@
 #include "3-calc.h"
 /**
  * main - do
+ * @argc: var
+ * @argv: pointer
  * Return: success
  */
 int main(int argc, char **argv)
