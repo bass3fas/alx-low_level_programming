@@ -1,0 +1,22 @@
+#include <stdarg.h>
+#include "variadic_functions.h"
+/**
+ * print_numbers - sum
+ * @n: int
+ * @separator: string
+ * Return: sum
+ */
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+	unsigned int i;
+	va_list list;
+
+	va_start(list, n);
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%d\n", va_arg(list, int));
+	}
+
+	va_end(list);
+}
