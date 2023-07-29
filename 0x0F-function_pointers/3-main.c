@@ -3,7 +3,7 @@
  * main - do
  * Return: success
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int arg1, arg2, result;
 	char o;
