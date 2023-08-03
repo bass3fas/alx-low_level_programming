@@ -1,0 +1,20 @@
+/**
+ * ic_palindrome - some
+ * @s: string
+ * Return: int
+ */
+int is_palindrome(char *s)
+{
+	if(s == NULL)
+		return (1);
+	return (palind(s, 0, len));
+}
+int palind(char *s, int i, int len)
+{
+}
+int _strlen(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen(s + 1));
+}
