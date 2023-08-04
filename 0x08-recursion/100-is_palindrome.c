@@ -9,6 +9,8 @@ int _strlen(char *s);
  */
 int is_palindrome(char *s)
 {
+	int len = _strlen(s);
+	
 	if(s == NULL)
 		return (1);
 	return (palind(s, 0, len));
