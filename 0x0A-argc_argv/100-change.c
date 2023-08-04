@@ -5,7 +5,7 @@
  * main - somehting
  * @argc: var
  * @argv: arr
- * Return : success
+ * Return: success or error
  */
 int main(int argc, char *argv[])
 {
