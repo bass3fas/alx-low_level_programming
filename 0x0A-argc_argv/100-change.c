@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -17,13 +18,13 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	num = atoi(argv[1]);
-	if (num <= 0)
+	result = 0;
+	if (num < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	result = 0;
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 5 && num >= 0; i++)
 	{
 		if (num >= coins[i])
 		{
