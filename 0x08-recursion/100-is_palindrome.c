@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 int palind(char *s, int i, int len);
 int _strlen(char *s);
 /**
