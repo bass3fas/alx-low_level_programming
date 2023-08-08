@@ -8,7 +8,7 @@ int count(char *s);
 char **strtow(char *str)
 {
 	char **arr, *tmp;
-	int len = 0, k = 0, w, c = 0, s = 0, i, j;
+	int len = 0, k = 0, w, c = 0, s = 0, i, j, e;
 
 	while (*(str + len))
 		len++;
