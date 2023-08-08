@@ -1,4 +1,4 @@
-0;10;1c0;10;1c#include "main.h"
+#include "main.h"
 int count(char *s);
 /**
  * strtow - does something
@@ -8,7 +8,7 @@ int count(char *s);
 char **strtow(char *str)
 {
 	char **arr, *tmp;
-	int len = 0, k = 0, w, c = 0, s = 0, e, i;
+	int len = 0, k = 0, w, c = 0, s = 0, e, i, j;
 
 	while (*(str + len))
 		len++;
