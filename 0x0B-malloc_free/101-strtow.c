@@ -26,7 +26,7 @@ char **strtow(char *str)
 			if (tmp == NULL)
 				return (NULL);
 			for (j = 0; j < c; j++)
-				tmp[j] = str[s+j];
+				tmp[j] = str[s + j];
 			tmp[c] = '\0';
 			arr[k] = tmp;
 			k++;
