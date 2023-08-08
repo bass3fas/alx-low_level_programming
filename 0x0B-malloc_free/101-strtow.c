@@ -52,6 +52,7 @@ char **strtow(char *str)
 int count(char *s)
 {
 	int f, c, w;
+
 	f = 0;
 	w = 0;
 	for (c = 0; s[c] != '\0'; c++)
