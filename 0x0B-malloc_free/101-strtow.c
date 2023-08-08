@@ -1,4 +1,4 @@
-#include "main.h"
+0;10;1c0;10;1c#include "main.h"
 int count(char *s);
 /**
  * strtow - does something
@@ -8,7 +8,7 @@ int count(char *s);
 char **strtow(char *str)
 {
 	char **arr, *tmp;
-	int len = 0, k = 0, w, c = 0, s, e, i;
+	int len = 0, k = 0, w, c = 0, s = 0, e, i;
 
 	while (*(str + len))
 		len++;
@@ -26,10 +26,10 @@ char **strtow(char *str)
 			tmp = (char *) malloc(sizeof(char) * (c + 1));
 			if (tmp == NULL)
 				return (NULL);
-			while (s < e)
-				*tmp++ = str[s++];
-			*tmp = '\0';
-			arr[k] = tmp - c;
+			for (j = 0; j < c; j++)
+				tmp[j] = str[s+j];
+			tmp[c] = '\0';
+			arr[k] = tmp;
 			k++;
 			c = 0;
 		}
