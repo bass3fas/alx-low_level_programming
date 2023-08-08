@@ -8,7 +8,7 @@ int count(char *s);
 char **strtow(char *str)
 {
 	char **arr, *tmp;
-	int len = 0, k = 0, w, c = 0, s = 0, i, j, e;
+	int len = 0, k = 0, w, c = 0, s = 0, i, j;
 
 	while (*(str + len))
 		len++;
@@ -22,7 +22,6 @@ char **strtow(char *str)
 	{
 		if ((str[i] == ' ' || str[i] == '\0') && c != 0)
 		{
-			e = i;
 			tmp = (char *) malloc(sizeof(char) * (c + 1));
 			if (tmp == NULL)
 				return (NULL);
