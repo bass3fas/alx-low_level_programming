@@ -32,6 +32,14 @@ int _strlen(char *s)
 	return (i);
 }
 /**
+ * err - some
+ */
+void err(void)
+{
+	printf("Error\n");
+	exit(98);
+}
+/**
  * main - some
  * @argc: var
  * @argv: var
@@ -44,11 +52,8 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1];
 	s2 = argv[2];
-	if (argc !=3 || !_digit(s1) || !_digit(s2))
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	if (argc != 3 || !_digit(s1) || !_digit(s2))
+		err();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	result = malloc(sizeof(int) * (len1 + len2 + 1));
