@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * string_nconcat - does something
@@ -8,9 +9,9 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1 = 0;
-	int len2 = 0;
-	int i, j;
+	unsigned int len1 = 0;
+	unsigned int len2 = 0;
+	unsigned int i, j;
 	char *s3;
 
 	while (s1 && s1[len1])
@@ -18,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2 && s2[len2])
 		len2++;
 	if (n < len2)
-		s3 = malloc(sizeof(char) * (len1 + n +1);
+		s3 = malloc(sizeof(char) * (len1 + n + 1));
 	else
 		s3 = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (!s3)
