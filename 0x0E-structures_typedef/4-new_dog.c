@@ -18,7 +18,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 	/* checking length of name, allocating memory, copying */
-	while(name[lname])
+	while (name[lname])
 		lname++;
 	dog->name = malloc(sizeof(char) * (lname + 1));
 	if (dog->name == NULL)
@@ -26,14 +26,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		return (NULL);
 	}
-	while(i < lname)
+	while (i < lname)
 	{
 		dog->name[i] = name[i];
 		i++;
 	}
 	dog->name[i] = '\0';
 	/* checking length of owner, allocating memory, copying */
-	while(owner[lowner])
+	while (owner[lowner])
 		lowner++;
 	dog->owner = malloc(sizeof(char) * (lowner + 1));
 	if (dog->owner == NULL)
@@ -42,7 +42,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	while(j < lowner)
+	while (j < lowner)
 	{
 		dog->owner[j] = owner[j];
 		j++;
