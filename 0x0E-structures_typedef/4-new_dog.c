@@ -15,7 +15,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int lowner = 0;
 	int i = 0, j = 0;
 
-	if (mydog == NULL)
+	if (dog == NULL)
 		return (NULL);
 	/* checking length of name, allocating memory, copying */
 	while(name[lname])
