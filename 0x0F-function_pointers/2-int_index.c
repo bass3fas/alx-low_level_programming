@@ -3,7 +3,7 @@
 /**
  * int_index - something
  * @array: arr
- * @size
+ * @size: int
  * @cmp: func
  * Return: int
  */
