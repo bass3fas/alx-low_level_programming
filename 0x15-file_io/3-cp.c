@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 	buffer = create_buffer(argv[2]);
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buffer, 1024);
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNK, 0664);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	do {
 		if (from == -1 || r == -1)
 		{
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(98);
 		}
-		w = write(tom buffer, r);
+		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
